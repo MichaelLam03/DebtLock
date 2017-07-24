@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E5A24501F25E7AC00F19581 /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A244F1F25E7AC00F19581 /* Date+convertToString.swift */; };
 		7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E621F25E32100F58D25 /* AppDelegate.swift */; };
 		7E783E651F25E32100F58D25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E641F25E32100F58D25 /* ViewController.swift */; };
 		7E783E681F25E32100F58D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E661F25E32100F58D25 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E5A244F1F25E7AC00F19581 /* Date+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
 		7E783E5F1F25E32100F58D25 /* DebtLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebtLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E783E621F25E32100F58D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E783E641F25E32100F58D25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E5A244E1F25E6B200F19581 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Controller";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		7E783E561F25E32100F58D25 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,8 @@
 				7E783E691F25E32100F58D25 /* Assets.xcassets */,
 				7E783E6B1F25E32100F58D25 /* LaunchScreen.storyboard */,
 				7E783E6E1F25E32100F58D25 /* Info.plist */,
+				5E5A244F1F25E7AC00F19581 /* Date+convertToString.swift */,
+				5E5A244E1F25E6B200F19581 /* View Controller */,
 			);
 			path = DebtLock;
 			sourceTree = "<group>";
@@ -137,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5A24501F25E7AC00F19581 /* Date+convertToString.swift in Sources */,
 				7E783E651F25E32100F58D25 /* ViewController.swift in Sources */,
 				7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +315,7 @@
 				7E783E731F25E32100F58D25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
