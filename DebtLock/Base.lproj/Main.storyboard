@@ -50,38 +50,58 @@
             </objects>
             <point key="canvasLocation" x="-1557" y="48"/>
         </scene>
-        <!--List Table View Controller-->
+        <!--My Debts-->
         <scene sceneID="SJl-SK-YJD">
             <objects>
                 <tableViewController id="XfL-Ob-QYm" customClass="ListTableViewController" customModule="DebtLock" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="aI8-en-qc4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.99786941113370431" blue="0.92516309689593179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total : $XX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yBl-8D-Mhe">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.90588235294117647" green="0.3529411764705882" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListTableViewCell" rowHeight="80" id="WDx-uA-UvL" customClass="ListTableViewCell" customModule="DebtLock" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WDx-uA-UvL" id="R2x-2n-hUR">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEk-HY-CvB">
-                                            <rect key="frame" x="26" y="8" width="324" height="13"/>
+                                            <rect key="frame" x="25" y="21" width="324" height="13"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1c-DY-8bG">
-                                            <rect key="frame" x="26" y="29" width="324" height="21"/>
+                                            <rect key="frame" x="25" y="42" width="324" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" $XX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jh-h7-ecE">
+                                            <rect key="frame" x="308" y="21" width="42" height="37"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="6jh-h7-ecE" secondAttribute="bottom" constant="21.5" id="6lC-2k-Gf5"/>
+                                        <constraint firstItem="6jh-h7-ecE" firstAttribute="top" secondItem="R2x-2n-hUR" secondAttribute="top" constant="21" id="SKT-IW-BZy"/>
+                                        <constraint firstAttribute="trailing" secondItem="6jh-h7-ecE" secondAttribute="trailing" constant="25" id="fvA-5J-rRc"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.72156862745098038" green="0.88235294117647056" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="DueDateLabel" destination="o1c-DY-8bG" id="gZT-Xd-z9B"/>
                                     <outlet property="NameTitleLabel" destination="AEk-HY-CvB" id="cx4-Ue-IpN"/>
@@ -94,7 +114,7 @@
                             <outlet property="delegate" destination="XfL-Ob-QYm" id="cfC-dh-8eB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="NVu-lK-Nr1">
+                    <navigationItem key="navigationItem" title="My Debts" id="NVu-lK-Nr1">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bOk-ba-iUB">
                             <connections>
                                 <segue destination="BDa-TJ-Vye" kind="show" identifier="addDebt" id="B2W-1D-9ID"/>
@@ -192,6 +212,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="B2W-1D-9ID"/>
+        <segue reference="dhq-ee-qMe"/>
     </inferredMetricsTieBreakers>
 </document>
