@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5E5A24501F25E7AC00F19581 /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A244F1F25E7AC00F19581 /* Date+convertToString.swift */; };
+		5E5A24531F25E82700F19581 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A24521F25E82700F19581 /* ListTableViewController.swift */; };
+		5E5A24551F25E85000F19581 /* DisplayDebtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A24541F25E85000F19581 /* DisplayDebtViewController.swift */; };
+		5E5A24571F25E87100F19581 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A24561F25E87100F19581 /* CoreDataHelper.swift */; };
 		7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E621F25E32100F58D25 /* AppDelegate.swift */; };
 		7E783E651F25E32100F58D25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E641F25E32100F58D25 /* ViewController.swift */; };
 		7E783E681F25E32100F58D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E661F25E32100F58D25 /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		5E5A244F1F25E7AC00F19581 /* Date+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
+		5E5A24521F25E82700F19581 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTableViewController.swift; path = DebtLock/ListTableViewController.swift; sourceTree = "<group>"; };
+		5E5A24541F25E85000F19581 /* DisplayDebtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayDebtViewController.swift; path = DebtLock/DisplayDebtViewController.swift; sourceTree = "<group>"; };
+		5E5A24561F25E87100F19581 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		7E783E5F1F25E32100F58D25 /* DebtLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebtLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E783E621F25E32100F58D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E783E641F25E32100F58D25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,9 +46,27 @@
 		5E5A244E1F25E6B200F19581 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5E5A24521F25E82700F19581 /* ListTableViewController.swift */,
+				5E5A24541F25E85000F19581 /* DisplayDebtViewController.swift */,
 			);
 			name = "View Controller";
 			path = ..;
+			sourceTree = "<group>";
+		};
+		5E5A24511F25E7D600F19581 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5E5A244F1F25E7AC00F19581 /* Date+convertToString.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		5E5A24581F25E87500F19581 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5E5A24561F25E87100F19581 /* CoreDataHelper.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		7E783E561F25E32100F58D25 = {
@@ -70,8 +94,9 @@
 				7E783E691F25E32100F58D25 /* Assets.xcassets */,
 				7E783E6B1F25E32100F58D25 /* LaunchScreen.storyboard */,
 				7E783E6E1F25E32100F58D25 /* Info.plist */,
-				5E5A244F1F25E7AC00F19581 /* Date+convertToString.swift */,
+				5E5A24511F25E7D600F19581 /* Extension */,
 				5E5A244E1F25E6B200F19581 /* View Controller */,
+				5E5A24581F25E87500F19581 /* Helper */,
 			);
 			path = DebtLock;
 			sourceTree = "<group>";
@@ -149,9 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5A24571F25E87100F19581 /* CoreDataHelper.swift in Sources */,
 				5E5A24501F25E7AC00F19581 /* Date+convertToString.swift in Sources */,
+				5E5A24551F25E85000F19581 /* DisplayDebtViewController.swift in Sources */,
 				7E783E651F25E32100F58D25 /* ViewController.swift in Sources */,
 				7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */,
+				5E5A24531F25E82700F19581 /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
