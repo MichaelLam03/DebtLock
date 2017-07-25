@@ -318,7 +318,6 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="AmountTextField" destination="zBc-Yh-1IK" id="40y-cd-OZa"/>
                         <outlet property="DateDueTextField" destination="zNG-Fx-XTM" id="Jfv-8H-6Tb"/>
                         <outlet property="DebtContentTextView" destination="GZT-WR-9er" id="Dvm-w0-MW7"/>
                         <outlet property="debtTitleTextField" destination="ltJ-Ww-LtV" id="JHE-Qp-ZFd"/>
