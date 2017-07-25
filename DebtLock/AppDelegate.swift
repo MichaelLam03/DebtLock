@@ -12,6 +12,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -41,6 +43,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
+        
+        // 1
+        let storyboard = UIStoryboard(name: "Login", bundle: .main)
+        
+        // 2
+        if let initialViewController = storyboard.instantiateInitialViewController() {
+            // 3
+            window?.rootViewController = initialViewController
+            // 4
+            window?.makeKeyAndVisible()
+        }
+        
+        return true
+    }
+    
+    
+    
 }
 
