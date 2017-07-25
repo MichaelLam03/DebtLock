@@ -88,6 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
+<<<<<<< HEAD
 /*
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -108,6 +109,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     */
     
+=======
+>>>>>>> cccdafbc0affb5a1a3374905d9743eabd6811ad6
     
 }
 
