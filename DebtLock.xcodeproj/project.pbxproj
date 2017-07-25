@@ -11,6 +11,8 @@
 		5E5A24531F25E82700F19581 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A24521F25E82700F19581 /* ListTableViewController.swift */; };
 		5E5A24551F25E85000F19581 /* DisplayDebtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A24541F25E85000F19581 /* DisplayDebtViewController.swift */; };
 		5E5A24571F25E87100F19581 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A24561F25E87100F19581 /* CoreDataHelper.swift */; };
+		5E5A245A1F25E9F300F19581 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A24591F25E9F300F19581 /* ListTableViewCell.swift */; };
+		5EECE85C1F260A69002A1362 /* MakeSchoolNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EECE85A1F260A69002A1362 /* MakeSchoolNotes.xcdatamodeld */; };
 		7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E621F25E32100F58D25 /* AppDelegate.swift */; };
 		7E783E651F25E32100F58D25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E641F25E32100F58D25 /* ViewController.swift */; };
 		7E783E681F25E32100F58D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E661F25E32100F58D25 /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		5E5A24521F25E82700F19581 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTableViewController.swift; path = DebtLock/ListTableViewController.swift; sourceTree = "<group>"; };
 		5E5A24541F25E85000F19581 /* DisplayDebtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayDebtViewController.swift; path = DebtLock/DisplayDebtViewController.swift; sourceTree = "<group>"; };
 		5E5A24561F25E87100F19581 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		5E5A24591F25E9F300F19581 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		5EECE85B1F260A69002A1362 /* MakeSchoolNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MakeSchoolNotes.xcdatamodel; sourceTree = "<group>"; };
 		7E783E5F1F25E32100F58D25 /* DebtLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebtLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E783E621F25E32100F58D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E783E641F25E32100F58D25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,11 +77,20 @@
 			name = Helper;
 			sourceTree = "<group>";
 		};
+		5E5A245B1F25EAAB00F19581 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				5E5A24591F25E9F300F19581 /* ListTableViewCell.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		7E783E561F25E32100F58D25 = {
 			isa = PBXGroup;
 			children = (
 				7E783E611F25E32100F58D25 /* DebtLock */,
 				7E783E601F25E32100F58D25 /* Products */,
+				5EECE85A1F260A69002A1362 /* MakeSchoolNotes.xcdatamodeld */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +116,7 @@
 				5E5A24511F25E7D600F19581 /* Extension */,
 				5E5A244E1F25E6B200F19581 /* View Controller */,
 				5E5A24581F25E87500F19581 /* Helper */,
+				5E5A245B1F25EAAB00F19581 /* views */,
 			);
 			path = DebtLock;
 			sourceTree = "<group>";
@@ -181,9 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+				5E5A245A1F25E9F300F19581 /* ListTableViewCell.swift in Sources */,
+=======
 				7E783E781F26D5A700F58D25 /* LoginViewController.swift in Sources */,
+>>>>>>> 34872b9688688ca3e8e78140f62a476dbf5eb122
 				5E5A24571F25E87100F19581 /* CoreDataHelper.swift in Sources */,
 				5E5A24501F25E7AC00F19581 /* Date+convertToString.swift in Sources */,
+				5EECE85C1F260A69002A1362 /* MakeSchoolNotes.xcdatamodeld in Sources */,
 				5E5A24551F25E85000F19581 /* DisplayDebtViewController.swift in Sources */,
 				7E783E651F25E32100F58D25 /* ViewController.swift in Sources */,
 				7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */,
@@ -362,6 +381,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5EECE85A1F260A69002A1362 /* MakeSchoolNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5EECE85B1F260A69002A1362 /* MakeSchoolNotes.xcdatamodel */,
+			);
+			currentVersion = 5EECE85B1F260A69002A1362 /* MakeSchoolNotes.xcdatamodel */;
+			name = MakeSchoolNotes.xcdatamodeld;
+			path = DebtLock/MakeSchoolNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7E783E571F25E32100F58D25 /* Project object */;
 }
