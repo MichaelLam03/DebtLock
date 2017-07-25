@@ -20,13 +20,50 @@
                     <view key="view" contentMode="scaleToFill" id="x7R-QL-gBb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5bM-e6-zyA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="192"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEBTLOCK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmT-wM-m3R">
+                                        <rect key="frame" x="59" y="10" width="257" height="79"/>
+                                        <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="56"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lock down your debt " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLX-iN-QPv">
+                                        <rect key="frame" x="105" y="91" width="165" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.69516198318816447" blue="0.58627358366781035" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="SmT-wM-m3R" firstAttribute="top" secondItem="5bM-e6-zyA" secondAttribute="top" constant="10" id="1uL-37-OYo"/>
+                                    <constraint firstAttribute="height" constant="260" id="FEU-Ge-Yjr"/>
+                                    <constraint firstItem="SmT-wM-m3R" firstAttribute="width" secondItem="5bM-e6-zyA" secondAttribute="width" constant="-118" id="Y5C-rc-yRj"/>
+                                    <constraint firstItem="SmT-wM-m3R" firstAttribute="centerX" secondItem="5bM-e6-zyA" secondAttribute="centerX" id="hU6-ej-WDP"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQl-J5-rmg">
+                                <rect key="frame" x="61" y="305" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                            </button>
+                        </subviews>
                         <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5bM-e6-zyA" firstAttribute="top" secondItem="x7R-QL-gBb" secondAttribute="top" id="EUC-OB-Wga"/>
+                            <constraint firstItem="5bM-e6-zyA" firstAttribute="leading" secondItem="x7R-QL-gBb" secondAttribute="leading" id="rQP-j2-KSj"/>
+                            <constraint firstAttribute="trailing" secondItem="5bM-e6-zyA" secondAttribute="trailing" id="vem-3S-ddh"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYE-Zq-i3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-94" y="72"/>
+            <point key="canvasLocation" x="-95.200000000000003" y="71.514242878560722"/>
         </scene>
     </scenes>
 </document>
