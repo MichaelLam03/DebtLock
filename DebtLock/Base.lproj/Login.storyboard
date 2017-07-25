@@ -55,6 +55,9 @@
                                     <constraint firstAttribute="height" constant="44" id="8DI-hE-9Xq"/>
                                 </constraints>
                                 <state key="normal" title="Login or Register"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="50a-Xg-7OU" eventType="touchUpInside" id="jQU-mf-g33"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

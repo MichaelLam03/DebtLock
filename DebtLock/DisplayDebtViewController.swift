@@ -5,12 +5,12 @@
 //  Created by Ji Yeon Kim on 24/7/2017.
 //  Copyright © 2017 Michael Lam. All rights reserved.
 //
-
+/*
 import Foundation
 import UIKit
 
 class DisplayDebtViewController : UIViewController {
-    var note: Note?
+    var debt: Debt?
     
     @IBOutlet weak var DebtContentTextView: UITextView!
     @IBOutlet weak var debtTitleTextField: UITextField!
@@ -37,11 +37,11 @@ class DisplayDebtViewController : UIViewController {
             // if note exists, update title and content
            // let note = self.note ?? CoreDataHelper.createNote()
             
-            note.title = debtTitleTextField.text ?? ""
-            note.amount = AmountTextField.text ?? nil
-            note.duedate = DateDueTextField.text ?? nil
-            note.content = DebtContentTextView.text ?? ""
-            note.modificationTime = Date() as NSDate
+            debt.title = debtTitleTextField.text ?? ""
+            debt.amount = AmountTextField.text ?? nil
+            debt.duedate = DateDueTextField.text ?? nil
+            debt.content = DebtContentTextView.text ?? ""
+            debt.modificationTime = Date() as NSDate
 //            CoreDataHelper.saveNote()
         }
     }
@@ -51,13 +51,13 @@ class DisplayDebtViewController : UIViewController {
         
         // 1
         
-        if let note = note {
+        if let debt = debt {
             
             // 2
-            debtTitleTextField.text = note.title
-            AmountTextField.text = note.amount
-            DebtContentTextView.text = note.content
-            DateDueTextField.text = note.duedate
+            debtTitleTextField.text = debt.title
+            AmountTextField.text = debt.amount
+            DebtContentTextView.text = debt.content
+            DateDueTextField.text = debt.duedate
            
         } else{
             // 3
@@ -69,5 +69,5 @@ class DisplayDebtViewController : UIViewController {
         }
     }
 }
-
+*/
 

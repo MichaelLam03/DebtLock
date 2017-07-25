@@ -11,6 +11,7 @@
 		5E5A24501F25E7AC00F19581 /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A244F1F25E7AC00F19581 /* Date+convertToString.swift */; };
 		5E5A24551F25E85000F19581 /* DisplayDebtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A24541F25E85000F19581 /* DisplayDebtViewController.swift */; };
 		5E5A245A1F25E9F300F19581 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A24591F25E9F300F19581 /* ListTableViewCell.swift */; };
+		5EC36DDD1F273EE1003AC792 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC36DDC1F273EE1003AC792 /* User.swift */; };
 		5EE517C21F273954000D2072 /* DebtsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE517C11F273954000D2072 /* DebtsTableViewController.swift */; };
 		5EE517C41F273A6D000D2072 /* Debt Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE517C31F273A6D000D2072 /* Debt Service.swift */; };
 		7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E621F25E32100F58D25 /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 		5E5A244F1F25E7AC00F19581 /* Date+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
 		5E5A24541F25E85000F19581 /* DisplayDebtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayDebtViewController.swift; path = DebtLock/DisplayDebtViewController.swift; sourceTree = "<group>"; };
 		5E5A24591F25E9F300F19581 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		5EC36DDC1F273EE1003AC792 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5EE517C11F273954000D2072 /* DebtsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtsTableViewController.swift; sourceTree = "<group>"; };
 		5EE517C31F273A6D000D2072 /* Debt Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Debt Service.swift"; sourceTree = "<group>"; };
 		7E783E5F1F25E32100F58D25 /* DebtLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebtLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 		5EEB36501F27171800A33DEC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5EC36DDC1F273EE1003AC792 /* User.swift */,
 				7E783E6E1F25E32100F58D25 /* Info.plist */,
 				7E783E791F26F5F600F58D25 /* GoogleService-Info.plist */,
 				7E783E691F25E32100F58D25 /* Assets.xcassets */,
@@ -292,6 +295,7 @@
 				5EE517C21F273954000D2072 /* DebtsTableViewController.swift in Sources */,
 				5E5A24501F25E7AC00F19581 /* Date+convertToString.swift in Sources */,
 				5E5A24551F25E85000F19581 /* DisplayDebtViewController.swift in Sources */,
+				5EC36DDD1F273EE1003AC792 /* User.swift in Sources */,
 				5EE517C41F273A6D000D2072 /* Debt Service.swift in Sources */,
 				7E783E651F25E32100F58D25 /* ViewController.swift in Sources */,
 				7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */,
