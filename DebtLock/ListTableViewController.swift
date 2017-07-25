@@ -8,25 +8,34 @@
 
 import Foundation
 import UIKit
+import FirebaseDatabase
+import Firebase
+import FirebaseCore
+
 
 class ListTableViewController: UITableViewController {
     
-    var notes = [Note]() {
-        didSet {
-            tableView.reloadData()
-        }
+    var ref : DatabaseReference!
+    ref = DatabaseReference.database().reference()
+    
+    override func viewDidLoad() {
+         super.viewDidLoad()
     }
     
     
+    
+}
+    
+    /*
     override func viewDidLoad() {
         super.viewDidLoad()
-        notes = CoreDataHelper.retrieveNotes()
+        
         
        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
             }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notes.count
+        
     }
     
     
@@ -99,5 +108,5 @@ class ListTableViewController: UITableViewController {
     
     
 }
-
+*/
 

@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		486C43E7152A56A743C326C4 /* Pods_DebtLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A7CC4C903FCCCAA573B41 /* Pods_DebtLock.framework */; };
 		5E5A24501F25E7AC00F19581 /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A244F1F25E7AC00F19581 /* Date+convertToString.swift */; };
 		5E5A24531F25E82700F19581 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A24521F25E82700F19581 /* ListTableViewController.swift */; };
 		5E5A24551F25E85000F19581 /* DisplayDebtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A24541F25E85000F19581 /* DisplayDebtViewController.swift */; };
-		5E5A24571F25E87100F19581 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A24561F25E87100F19581 /* CoreDataHelper.swift */; };
 		5E5A245A1F25E9F300F19581 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A24591F25E9F300F19581 /* ListTableViewCell.swift */; };
-		5EECE85C1F260A69002A1362 /* MakeSchoolNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EECE85A1F260A69002A1362 /* MakeSchoolNotes.xcdatamodeld */; };
 		7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E621F25E32100F58D25 /* AppDelegate.swift */; };
 		7E783E651F25E32100F58D25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E641F25E32100F58D25 /* ViewController.swift */; };
 		7E783E681F25E32100F58D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E661F25E32100F58D25 /* Main.storyboard */; };
@@ -20,15 +19,14 @@
 		7E783E6D1F25E32100F58D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E6B1F25E32100F58D25 /* LaunchScreen.storyboard */; };
 		7E783E761F26D48000F58D25 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E741F26D48000F58D25 /* Login.storyboard */; };
 		7E783E781F26D5A700F58D25 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E771F26D5A700F58D25 /* LoginViewController.swift */; };
+		7E783E7A1F26F5F600F58D25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E791F26F5F600F58D25 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E5A244F1F25E7AC00F19581 /* Date+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
 		5E5A24521F25E82700F19581 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTableViewController.swift; path = DebtLock/ListTableViewController.swift; sourceTree = "<group>"; };
 		5E5A24541F25E85000F19581 /* DisplayDebtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayDebtViewController.swift; path = DebtLock/DisplayDebtViewController.swift; sourceTree = "<group>"; };
-		5E5A24561F25E87100F19581 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		5E5A24591F25E9F300F19581 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
-		5EECE85B1F260A69002A1362 /* MakeSchoolNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MakeSchoolNotes.xcdatamodel; sourceTree = "<group>"; };
 		7E783E5F1F25E32100F58D25 /* DebtLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebtLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E783E621F25E32100F58D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E783E641F25E32100F58D25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +36,10 @@
 		7E783E6E1F25E32100F58D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E783E751F26D48000F58D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		7E783E771F26D5A700F58D25 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7E783E791F26F5F600F58D25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E5D68EE00470BC886BD9167 /* Pods-DebtLock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebtLock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DebtLock/Pods-DebtLock.debug.xcconfig"; sourceTree = "<group>"; };
+		B0585185CF68C767136D8247 /* Pods-DebtLock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebtLock.release.xcconfig"; path = "Pods/Target Support Files/Pods-DebtLock/Pods-DebtLock.release.xcconfig"; sourceTree = "<group>"; };
+		F84A7CC4C903FCCCAA573B41 /* Pods_DebtLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DebtLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +47,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486C43E7152A56A743C326C4 /* Pods_DebtLock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28F00E53761C8D358018DB61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E5D68EE00470BC886BD9167 /* Pods-DebtLock.debug.xcconfig */,
+				B0585185CF68C767136D8247 /* Pods-DebtLock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5E5A244E1F25E6B200F19581 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,7 +84,6 @@
 		5E5A24581F25E87500F19581 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				5E5A24561F25E87100F19581 /* CoreDataHelper.swift */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -85,12 +96,33 @@
 			name = views;
 			sourceTree = "<group>";
 		};
+		5EEB364F1F27169300A33DEC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7E783E661F25E32100F58D25 /* Main.storyboard */,
+				7E783E6B1F25E32100F58D25 /* LaunchScreen.storyboard */,
+				7E783E741F26D48000F58D25 /* Login.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		5EEB36501F27171800A33DEC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7E783E6E1F25E32100F58D25 /* Info.plist */,
+				7E783E791F26F5F600F58D25 /* GoogleService-Info.plist */,
+				7E783E691F25E32100F58D25 /* Assets.xcassets */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		7E783E561F25E32100F58D25 = {
 			isa = PBXGroup;
 			children = (
 				7E783E611F25E32100F58D25 /* DebtLock */,
 				7E783E601F25E32100F58D25 /* Products */,
-				5EECE85A1F260A69002A1362 /* MakeSchoolNotes.xcdatamodeld */,
+				28F00E53761C8D358018DB61 /* Pods */,
+				A30BF4ABD11486A1BC9ED4AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,18 +139,23 @@
 			children = (
 				7E783E621F25E32100F58D25 /* AppDelegate.swift */,
 				7E783E641F25E32100F58D25 /* ViewController.swift */,
-				7E783E741F26D48000F58D25 /* Login.storyboard */,
 				7E783E771F26D5A700F58D25 /* LoginViewController.swift */,
-				7E783E661F25E32100F58D25 /* Main.storyboard */,
-				7E783E691F25E32100F58D25 /* Assets.xcassets */,
-				7E783E6B1F25E32100F58D25 /* LaunchScreen.storyboard */,
-				7E783E6E1F25E32100F58D25 /* Info.plist */,
+				5EEB364F1F27169300A33DEC /* Storyboards */,
 				5E5A24511F25E7D600F19581 /* Extension */,
+				5EEB36501F27171800A33DEC /* Services */,
 				5E5A244E1F25E6B200F19581 /* View Controller */,
 				5E5A24581F25E87500F19581 /* Helper */,
 				5E5A245B1F25EAAB00F19581 /* views */,
 			);
 			path = DebtLock;
+			sourceTree = "<group>";
+		};
+		A30BF4ABD11486A1BC9ED4AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F84A7CC4C903FCCCAA573B41 /* Pods_DebtLock.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E783E711F25E32100F58D25 /* Build configuration list for PBXNativeTarget "DebtLock" */;
 			buildPhases = (
+				B299D11BFC439C2B93D0B6E6 /* [CP] Check Pods Manifest.lock */,
 				7E783E5B1F25E32100F58D25 /* Sources */,
 				7E783E5C1F25E32100F58D25 /* Frameworks */,
 				7E783E5D1F25E32100F58D25 /* Resources */,
+				9E3E799A00B0B7ABC5336E65 /* [CP] Embed Pods Frameworks */,
+				CC9A8D05915A1D11F81B4EF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,12 +223,61 @@
 			files = (
 				7E783E761F26D48000F58D25 /* Login.storyboard in Resources */,
 				7E783E6D1F25E32100F58D25 /* LaunchScreen.storyboard in Resources */,
+				7E783E7A1F26F5F600F58D25 /* GoogleService-Info.plist in Resources */,
 				7E783E6A1F25E32100F58D25 /* Assets.xcassets in Resources */,
 				7E783E681F25E32100F58D25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E3E799A00B0B7ABC5336E65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DebtLock/Pods-DebtLock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B299D11BFC439C2B93D0B6E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC9A8D05915A1D11F81B4EF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DebtLock/Pods-DebtLock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E783E5B1F25E32100F58D25 /* Sources */ = {
@@ -197,9 +286,7 @@
 			files = (
 				5E5A245A1F25E9F300F19581 /* ListTableViewCell.swift in Sources */,
 				7E783E781F26D5A700F58D25 /* LoginViewController.swift in Sources */,
-				5E5A24571F25E87100F19581 /* CoreDataHelper.swift in Sources */,
 				5E5A24501F25E7AC00F19581 /* Date+convertToString.swift in Sources */,
-				5EECE85C1F260A69002A1362 /* MakeSchoolNotes.xcdatamodeld in Sources */,
 				5E5A24551F25E85000F19581 /* DisplayDebtViewController.swift in Sources */,
 				7E783E651F25E32100F58D25 /* ViewController.swift in Sources */,
 				7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */,
@@ -332,6 +419,7 @@
 		};
 		7E783E721F25E32100F58D25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E5D68EE00470BC886BD9167 /* Pods-DebtLock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B3ZKWY8592;
@@ -345,6 +433,7 @@
 		};
 		7E783E731F25E32100F58D25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0585185CF68C767136D8247 /* Pods-DebtLock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B3ZKWY8592;
@@ -378,20 +467,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5EECE85A1F260A69002A1362 /* MakeSchoolNotes.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5EECE85B1F260A69002A1362 /* MakeSchoolNotes.xcdatamodel */,
-			);
-			currentVersion = 5EECE85B1F260A69002A1362 /* MakeSchoolNotes.xcdatamodel */;
-			name = MakeSchoolNotes.xcdatamodeld;
-			path = DebtLock/MakeSchoolNotes.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 7E783E571F25E32100F58D25 /* Project object */;
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+/*
 class DisplayDebtViewController : UIViewController {
     var note: Note?
     
@@ -71,6 +71,6 @@ class DisplayDebtViewController : UIViewController {
 }
 
 
-    
+   */ 
 
 
