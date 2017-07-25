@@ -195,11 +195,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				5E5A245A1F25E9F300F19581 /* ListTableViewCell.swift in Sources */,
-=======
 				7E783E781F26D5A700F58D25 /* LoginViewController.swift in Sources */,
->>>>>>> 34872b9688688ca3e8e78140f62a476dbf5eb122
 				5E5A24571F25E87100F19581 /* CoreDataHelper.swift in Sources */,
 				5E5A24501F25E7AC00F19581 /* Date+convertToString.swift in Sources */,
 				5EECE85C1F260A69002A1362 /* MakeSchoolNotes.xcdatamodeld in Sources */,
