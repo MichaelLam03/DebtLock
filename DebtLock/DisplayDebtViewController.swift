@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-/*
+
 class DisplayDebtViewController : UIViewController {
     var note: Note?
     
@@ -35,14 +35,14 @@ class DisplayDebtViewController : UIViewController {
             
             
             // if note exists, update title and content
-            let note = self.note ?? CoreDataHelper.createNote()
+           // let note = self.note ?? CoreDataHelper.createNote()
             
             note.title = debtTitleTextField.text ?? ""
             note.amount = AmountTextField.text ?? nil
             note.duedate = DateDueTextField.text ?? nil
             note.content = DebtContentTextView.text ?? ""
             note.modificationTime = Date() as NSDate
-            CoreDataHelper.saveNote()
+//            CoreDataHelper.saveNote()
         }
     }
     
@@ -69,8 +69,5 @@ class DisplayDebtViewController : UIViewController {
         }
     }
 }
-
-
-   */ 
 
 
