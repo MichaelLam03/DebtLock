@@ -21,15 +21,17 @@ class ListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         notes = CoreDataHelper.retrieveNotes()
-    }
+        
+       self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+            }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return notes.count
     }
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath) as! ListTableViewCell
-        
                
         // 1
         let row = indexPath.row
@@ -52,6 +54,7 @@ class ListTableViewController: UITableViewController {
         
         if cell.DueDateLabel.text == "" {
             cell.DueDateLabel.text = "....."
+            
         }
         return cell
     }
