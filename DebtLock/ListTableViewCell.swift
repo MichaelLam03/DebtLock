@@ -14,4 +14,6 @@ class ListTableViewCell : UITableViewCell {
    
     @IBOutlet weak var NameTitleLabel: UILabel!
     @IBOutlet weak var DueDateLabel: UILabel!
+    @IBOutlet weak var AmountLabel: UILabel!
+    
 }

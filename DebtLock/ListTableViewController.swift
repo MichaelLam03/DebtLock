@@ -30,6 +30,7 @@ class ListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath) as! ListTableViewCell
         
+               
         // 1
         let row = indexPath.row
         
@@ -37,11 +38,21 @@ class ListTableViewController: UITableViewController {
         let note = notes[row]
         
         // 3
-        cell.NameTitleLabel.text = note.title
+        cell.NameTitleLabel.text = note.title        
+        cell.AmountLabel.text = note.amount ?? "0"
+        
+        if cell.AmountLabel.text == "" {
+            cell.AmountLabel.text = "0"
+        }
+        
+        cell.DueDateLabel.text = note.duedate
         
         // 4
-        cell.DueDateLabel.text = note.modificationTime?.convertToString()
+        cell.DueDateLabel.text = note.duedate ?? "..."
         
+        if cell.DueDateLabel.text == "" {
+            cell.DueDateLabel.text = "....."
+        }
         return cell
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -72,6 +83,8 @@ class ListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+
         if editingStyle == .delete {
             //1
             CoreDataHelper.delete(note: notes[indexPath.row])
