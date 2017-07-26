@@ -126,10 +126,10 @@
 			children = (
 				5EC36DDC1F273EE1003AC792 /* User.swift */,
 				5EE613CF1F2821F300C228D6 /* user service.swift */,
+				5EE517C31F273A6D000D2072 /* Debt Service.swift */,
 				7E783E6E1F25E32100F58D25 /* Info.plist */,
 				7E783E791F26F5F600F58D25 /* GoogleService-Info.plist */,
 				7E783E691F25E32100F58D25 /* Assets.xcassets */,
-				5EE517C31F273A6D000D2072 /* Debt Service.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";

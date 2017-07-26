@@ -7,11 +7,43 @@
 //
 
 import Foundation
-<<<<<<< HEAD
-=======
-import FirebaseDatabase
+import FirebaseDatabase.FIRDataSnapshot
 
-class Debts {
+
+class Debts: NSObject {
     
+    // MARK: - Properties
+    
+    let uid: String
+    let name: String
+    
+    
+    // MARK: - Init
+    
+    init(uid: String, name: String) {
+        self.uid = uid
+        self.name = name
     }
->>>>>>> 824fa3acccb70ac78ef583e208ff4f2a724b7c0d
+    
+    
+    init?(snapshot: DataSnapshot) {
+        guard let dict = snapshot.value as? [String : Any],
+            let username = dict["name"] as? String
+            else { return nil }
+        
+        self.uid = snapshot.key
+        self.name = username
+    }
+    
+    
+    required init?(coder aDecoder: NSCoder) {
+        guard let uid = aDecoder.decodeObject(forKey: Constants.UserDefaults.uid) as? String,
+            let name = aDecoder.decodeObject(forKey: Constants.UserDefaults.name) as? String
+            else { return nil }
+        
+        self.uid = uid
+        self.name = name
+        
+        super.init()
+}
+}

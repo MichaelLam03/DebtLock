@@ -8,18 +8,11 @@
 
 import Foundation
 import FirebaseDatabase
+import FirebaseAuth.FIRUser
 
-
-
-
-
-
-
-
-
-
-
-
-
+struct DebtService {
     
+    func create() {
+        let ref = Database.database().reference().child("DEBT").childByAutoId()
 
+    }}
