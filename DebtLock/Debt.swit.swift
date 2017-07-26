@@ -10,40 +10,60 @@ import Foundation
 import FirebaseDatabase.FIRDataSnapshot
 
 
-class Debts: NSObject {
+class Debt: NSObject {
     
     // MARK: - Properties
     
-    let uid: String
-    let name: String
+    let id: String
+    let owedFrom: String
+    let amount: String
+    let debtDescription: String
+    let dueDate: String
+    
+    var dictValue: [String: String] {
+        let dict = [Constants.DebtDefaults.owedFrom: owedFrom,
+                    Constants.DebtDefaults.amount: amount,
+                    Constants.DebtDefaults.description: debtDescription,
+                    Constants.DebtDefaults.dueDate: dueDate]
+        return dict
+    }
     
     
     // MARK: - Init
     
-    init(uid: String, name: String) {
-        self.uid = uid
-        self.name = name
+    init(id: String, owedFrom: String, amount: String, description: String, dueDate: String) {
+        self.id = id
+        self.owedFrom = owedFrom
+        self.amount = amount
+        self.dueDate = dueDate
+        self.debtDescription = description
     }
     
     
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
-            let username = dict["name"] as? String
+            let owedFrom = dict[Constants.DebtDefaults.owedFrom] as? String,
+            let amount = dict[Constants.DebtDefaults.amount] as? String,
+            let description = dict[Constants.DebtDefaults.description] as? String,
+            let dueDate = dict[Constants.DebtDefaults.dueDate] as? String
             else { return nil }
         
-        self.uid = snapshot.key
-        self.name = username
+        self.id = snapshot.key
+        self.owedFrom = owedFrom
+        self.amount = amount
+        self.dueDate = dueDate
+        self.debtDescription = description
     }
     
-    
+    /*
     required init?(coder aDecoder: NSCoder) {
         guard let uid = aDecoder.decodeObject(forKey: Constants.UserDefaults.uid) as? String,
-            let name = aDecoder.decodeObject(forKey: Constants.UserDefaults.name) as? String
+            let owedTo = aDecoder.decodeObject(forKey: Constants.UserDefaults.name) as? String
             else { return nil }
         
-        self.uid = uid
-        self.name = name
+        self.id = uid
+        self.owedTo = owedTo
         
         super.init()
-}
+    }*/
 }

@@ -12,16 +12,18 @@ import FirebaseDatabase
 
 struct DebtService {
     
-        static func create(_ firUser: FIRUser, name: String, completion: @escaping (User?) -> Void) {
-        let userAttrs = ["name": name]
+    static func create(owedFrom: String, amount: String, debtDescription: String, dueDate: String, completion: @escaping (Debt?) -> Void) {
         
-        let ref = Database.database().reference().child("debts")
-        ref.setValue(userAttrs) { (error, ref) in
+        let ref = Database.database().reference().child("debts").child(User.current.uid).childByAutoId()
+        let debtID = ref.key
+        let debt = Debt(id: debtID, owedFrom: owedFrom, amount: amount, description: debtDescription, dueDate: dueDate)
+        ref.setValue(debt) { (error, ref) in
             if let error = error {
                 assertionFailure(error.localizedDescription)
                 return completion(nil)
             }
-            
-            
-            }}}
+            completion(debt)
+        }
+    }
+}
 

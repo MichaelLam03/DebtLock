@@ -19,4 +19,12 @@ struct Constants {
         static let username = "username"
         static let name = "name"
     }
+    
+    struct DebtDefaults {
+        static let id = "id"
+        static let owedFrom = "owedFrom"
+        static let amount = "amount"
+        static let description = "description"
+        static let dueDate = "dueDate"
+    }
 }

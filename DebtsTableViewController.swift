@@ -42,7 +42,7 @@ class DebtsTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
-            if identifier == "displayNote" {
+            if identifier == "displayDebt" {
                 print("Table view cell tapped")
             } else if identifier == "addDebt" {
                 print("+ button tapped")
