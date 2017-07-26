@@ -39,6 +39,17 @@ class DebtsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == "displayNote" {
+                print("Table view cell tapped")
+            } else if identifier == "addNote" {
+                print("+ button tapped")
+            }
+        }
+    }
+
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
