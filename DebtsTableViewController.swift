@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class DebtsTableViewController: UITableViewController {
+    
+    var ref: DatabaseReference! = Database.database().reference()
 
     override func viewDidLoad() {
         super.viewDidLoad()

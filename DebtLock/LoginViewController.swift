@@ -46,7 +46,7 @@ extension LoginViewController: FUIAuthDelegate {
             else { return }
         
         // 2
-        let userRef = Database.database().reference().child("users").child(user.uid)
+      //  let userRef = Database.database().reference().child("users").child(user.uid)
         
         // 3
         UserService.show(forUID: user.uid) { (user) in

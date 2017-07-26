@@ -18,6 +18,7 @@
 		5EE613D01F2821F300C228D6 /* user service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE613CF1F2821F300C228D6 /* user service.swift */; };
 		5EE613D21F28226A00C228D6 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE613D11F28226A00C228D6 /* constants.swift */; };
 		5EE613D41F282BD300C228D6 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE613D31F282BD300C228D6 /* Storyboard+Utility.swift */; };
+		5EE613D61F28348700C228D6 /* Debt.swit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE613D51F28348700C228D6 /* Debt.swit.swift */; };
 		7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E621F25E32100F58D25 /* AppDelegate.swift */; };
 		7E783E651F25E32100F58D25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E641F25E32100F58D25 /* ViewController.swift */; };
 		7E783E681F25E32100F58D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E661F25E32100F58D25 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		5EE613CF1F2821F300C228D6 /* user service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "user service.swift"; sourceTree = "<group>"; };
 		5EE613D11F28226A00C228D6 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		5EE613D31F282BD300C228D6 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
+		5EE613D51F28348700C228D6 /* Debt.swit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Debt.swit.swift; path = DebtLock/Debt.swit.swift; sourceTree = "<group>"; };
 		7E783E5F1F25E32100F58D25 /* DebtLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebtLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E783E621F25E32100F58D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E783E641F25E32100F58D25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				5EE517C11F273954000D2072 /* DebtsTableViewController.swift */,
+				5EE613D51F28348700C228D6 /* Debt.swit.swift */,
 				5E5A24541F25E85000F19581 /* DisplayDebtViewController.swift */,
 			);
 			name = "View Controller";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE613D61F28348700C228D6 /* Debt.swit.swift in Sources */,
 				5E5A245A1F25E9F300F19581 /* ListTableViewCell.swift in Sources */,
 				7E783E781F26D5A700F58D25 /* LoginViewController.swift in Sources */,
 				5EE517C21F273954000D2072 /* DebtsTableViewController.swift in Sources */,
