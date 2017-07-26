@@ -15,6 +15,9 @@
 		5EC36DDD1F273EE1003AC792 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC36DDC1F273EE1003AC792 /* User.swift */; };
 		5EE517C21F273954000D2072 /* DebtsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE517C11F273954000D2072 /* DebtsTableViewController.swift */; };
 		5EE517C41F273A6D000D2072 /* Debt Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE517C31F273A6D000D2072 /* Debt Service.swift */; };
+		5EE613D01F2821F300C228D6 /* user service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE613CF1F2821F300C228D6 /* user service.swift */; };
+		5EE613D21F28226A00C228D6 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE613D11F28226A00C228D6 /* constants.swift */; };
+		5EE613D41F282BD300C228D6 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE613D31F282BD300C228D6 /* Storyboard+Utility.swift */; };
 		7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E621F25E32100F58D25 /* AppDelegate.swift */; };
 		7E783E651F25E32100F58D25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E641F25E32100F58D25 /* ViewController.swift */; };
 		7E783E681F25E32100F58D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E661F25E32100F58D25 /* Main.storyboard */; };
@@ -33,6 +36,9 @@
 		5EC36DDC1F273EE1003AC792 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5EE517C11F273954000D2072 /* DebtsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtsTableViewController.swift; sourceTree = "<group>"; };
 		5EE517C31F273A6D000D2072 /* Debt Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Debt Service.swift"; sourceTree = "<group>"; };
+		5EE613CF1F2821F300C228D6 /* user service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "user service.swift"; sourceTree = "<group>"; };
+		5EE613D11F28226A00C228D6 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		5EE613D31F282BD300C228D6 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		7E783E5F1F25E32100F58D25 /* DebtLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebtLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E783E621F25E32100F58D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E783E641F25E32100F58D25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				5EC36DDC1F273EE1003AC792 /* User.swift */,
+				5EE613CF1F2821F300C228D6 /* user service.swift */,
 				7E783E6E1F25E32100F58D25 /* Info.plist */,
 				7E783E791F26F5F600F58D25 /* GoogleService-Info.plist */,
 				7E783E691F25E32100F58D25 /* Assets.xcassets */,
@@ -127,6 +134,7 @@
 		7E783E561F25E32100F58D25 = {
 			isa = PBXGroup;
 			children = (
+				5EE613D31F282BD300C228D6 /* Storyboard+Utility.swift */,
 				7E783E611F25E32100F58D25 /* DebtLock */,
 				7E783E601F25E32100F58D25 /* Products */,
 				28F00E53761C8D358018DB61 /* Pods */,
@@ -155,6 +163,7 @@
 				5E5A244E1F25E6B200F19581 /* View Controller */,
 				5E5A24581F25E87500F19581 /* Helper */,
 				5E5A245B1F25EAAB00F19581 /* views */,
+				5EE613D11F28226A00C228D6 /* constants.swift */,
 			);
 			path = DebtLock;
 			sourceTree = "<group>";
@@ -301,7 +310,10 @@
 				5EE517C41F273A6D000D2072 /* Debt Service.swift in Sources */,
 				7E783E651F25E32100F58D25 /* ViewController.swift in Sources */,
 				5E582A601F2769AE0082B91E /* CreateUsernameViewController.swift in Sources */,
+				5EE613D01F2821F300C228D6 /* user service.swift in Sources */,
+				5EE613D41F282BD300C228D6 /* Storyboard+Utility.swift in Sources */,
 				7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */,
+				5EE613D21F28226A00C228D6 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
