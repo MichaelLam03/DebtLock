@@ -10,6 +10,15 @@ import Foundation
 import UIKit
 
 class DisplayDebtViewController : UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBOutlet weak var oweOption: UISegmentedControl!
+    @IBOutlet weak var NameTextField: UITextField!
+    @IBOutlet weak var amountTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextView!
+    @IBOutlet weak var dateDueTextField: UITextField!
     
 }
  
