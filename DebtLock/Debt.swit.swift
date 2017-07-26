@@ -7,14 +7,3 @@
 //
 
 import Foundation
-import FirebaseDatabase
-
-class Debts {
-    
-    var key: String?
-    let title: String
-    let memberHash: String
-    let memberUIDs: [String]
-    var lastMessage: String?
-    var lastMessageSent: Date?
-}
