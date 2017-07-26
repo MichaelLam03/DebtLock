@@ -7,3 +7,11 @@
 //
 
 import Foundation
+<<<<<<< HEAD
+=======
+import FirebaseDatabase
+
+class Debts {
+    
+    }
+>>>>>>> 824fa3acccb70ac78ef583e208ff4f2a724b7c0d
