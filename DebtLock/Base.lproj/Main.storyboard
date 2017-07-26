@@ -289,6 +289,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="CyI-V7-rku">
                             <connections>
+                                <action selector="savebuttontapped:" destination="BDa-TJ-Vye" id="LBe-ER-wjN"/>
                                 <segue destination="uFd-Cn-PaH" kind="unwind" identifier="save" unwindAction="unwindToListNotesViewController:" id="gZh-VX-zAz"/>
                             </connections>
                         </barButtonItem>
@@ -340,7 +341,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KAJ-nq-KV1">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DebtListTableView" id="KAJ-nq-KV1">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KAJ-nq-KV1" id="AbH-5S-TJS">
