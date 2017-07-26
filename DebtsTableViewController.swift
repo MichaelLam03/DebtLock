@@ -44,7 +44,7 @@ class DebtsTableViewController: UITableViewController {
         if let identifier = segue.identifier {
             if identifier == "displayNote" {
                 print("Table view cell tapped")
-            } else if identifier == "addNote" {
+            } else if identifier == "addDebt" {
                 print("+ button tapped")
             }
         }
