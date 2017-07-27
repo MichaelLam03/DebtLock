@@ -25,5 +25,18 @@ struct DebtService {
             completion(debt)
         }
     }
+    
+    static func existingDebts(for user: User, completion: @escaping ([Debt]) -> Void) {
+        let ref = Database.database().reference().child("debt").child(user.uid)
+        
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let snapshot = snapshot.children.allObjects as? [DataSnapshot] else {
+                return completion([])
+            }
+            
+            let debts = snapshot.reversed().flatMap(Debt.init)
+            completion(debts)
+        })
+    }
 }
 

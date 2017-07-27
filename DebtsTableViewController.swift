@@ -5,11 +5,13 @@
 //  Created by Ji Yeon Kim on 25/7/2017.
 //  Copyright © 2017 Michael Lam. All rights reserved.
 //
-
+var count = 0
 import UIKit
 import FirebaseDatabase
 
 class DebtsTableViewController: UITableViewController {
+    
+    var debts = [Debt]()
     
     var ref: DatabaseReference! = Database.database().reference()
 
@@ -32,20 +34,29 @@ class DebtsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+        return 1    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 3
+    
     }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)
+        cell.backgroundColor = .red
+        
+        return cell
+    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
             if identifier == "displayDebt" {
                 print("Table view cell tapped")
             } else if identifier == "addDebt" {
+                count += 1
                 print("+ button tapped")
+                
             }
         }
     }

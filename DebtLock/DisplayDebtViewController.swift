@@ -18,12 +18,13 @@ class DisplayDebtViewController : UIViewController {
     @IBOutlet weak var NameTextField: UITextField!
     @IBOutlet weak var amountTextField: UITextField!
     
-    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var descriptionTextView: UITextField!
+   
     @IBOutlet weak var dateDueTextField: UITextField!
     
     @IBAction func savebuttontapped(_ sender: UIBarButtonItem) {
         
-      //  DebtService.create(owedFrom: NameTextField.text!, amount: amountTextField.text!, debtDescription: //descriptionTextField.text!, dueDate: dateDueTextField.text!, completion:)
+      // DebtService.create(owedFrom: NameTextField.text!, amount: amountTextField.text!, debtDescription: descriptionTextField.text!, dueDate: dateDueTextField.text!, completion:)
         
     }
 }
