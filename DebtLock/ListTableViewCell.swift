@@ -11,9 +11,9 @@ import UIKit
 
 class ListTableViewCell : UITableViewCell {
     
+    @IBOutlet weak var nameTitleLabel: UILabel!
+    @IBOutlet weak var dateDueLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
    
-    @IBOutlet weak var NameTitleLabel: UILabel!
-    @IBOutlet weak var DueDateLabel: UILabel!
-    @IBOutlet weak var AmountLabel: UILabel!
     
 }

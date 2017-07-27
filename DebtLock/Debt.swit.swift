@@ -15,10 +15,10 @@ class Debt {
     // MARK: - Properties
     
     let id: String
-    let owedFrom: String
-    let amount: String
-    let debtDescription: String
-    let dueDate: String
+    var owedFrom: String
+    var amount: String
+    var debtDescription: String
+    var dueDate: String
     
     var dictValue: [String: String] {
         let dict = [Constants.DebtDefaults.owedFrom: owedFrom,

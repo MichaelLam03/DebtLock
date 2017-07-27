@@ -9,14 +9,16 @@
 import UIKit
 import FirebaseDatabase
 
+import FirebaseAuth.FIRUser
+
 class DebtsTableViewController: UITableViewController {
     
     var debts = [Debt]() {
         didSet {
-            tableView.reloadData()
-        }
-    }
-
+           tableView.reloadData()
+       }
+}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,29 +46,51 @@ class DebtsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1    }
+        return 1   }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print(debts.count)
         return debts.count
+        
     
     }
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell") as? ListTableViewCell else {
             fatalError("No such cell!")
         }
         
+        return cell
+    }
+ */
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath) as! ListTableViewCell
+        
+        let row = indexPath.row
+        
+        let debt = debts[row]
+        
+        cell.nameTitleLabel.text = debt.owedFrom
+        
+        cell.amountLabel.text = debt.amount
+        
+        cell.dateDueLabel.text = debt.dueDate
         
         return cell
     }
+
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
             if identifier == Constants.Segue.displayDebt {
-                let indexPath = tableView.indexPathForSelectedRow
+                let indexPath = (tableView.indexPathForSelectedRow) 
                 let debt = debts[(indexPath?.row)!]
-                
+                let homeVC = segue.destination as! DisplayDebtViewController
+                homeVC.debt = debt
+               print(debts)
             } else if identifier == "addDebt" {
                
                 print("+ button tapped")
@@ -78,7 +102,22 @@ class DebtsTableViewController: UITableViewController {
     @IBAction func unwindToHome(_ segue: UIStoryboardSegue) {
         
     }
-
+    
+    @IBAction func unwindToHomeCancel(_ segue: UIStoryboardSegue) {
+        
+    }
+    
+    /*
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            //1
+            Database.database().reference().child("debts").child(User.current.uid).removeValue(completionBlock: { (error, refer) in
+            
+        }
+            )}
+ }
+ */
+    
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
