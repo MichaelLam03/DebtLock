@@ -14,6 +14,8 @@ import FirebaseAuth
 import FirebaseAuthUI
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+
 
     var window: UIWindow?
     
