@@ -27,7 +27,7 @@ struct DebtService {
     }
     
     static func existingDebts(for user: User, completion: @escaping ([Debt]) -> Void) {
-        let ref = Database.database().reference().child("debt").child(user.uid)
+        let ref = Database.database().reference().child("debts").child(user.uid)
         
         ref.observeSingleEvent(of: .value, with: { (snapshot) in
             guard let snapshot = snapshot.children.allObjects as? [DataSnapshot] else {

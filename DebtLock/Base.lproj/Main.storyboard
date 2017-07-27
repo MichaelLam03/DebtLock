@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="-1557" y="48"/>
         </scene>
-        <!--My Debts-->
+        <!--Their Debts-->
         <scene sceneID="SJl-SK-YJD">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="XfL-Ob-QYm" customClass="DebtsTableViewController" customModule="DebtLock" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,10 +36,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.99607843137254903" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total : $XX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yBl-8D-Mhe">
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total : $XX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tfU-oQ-IUu">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.90588235294117647" green="0.3529411764705882" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.90588235289999997" green="0.35294117650000001" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -145,7 +145,7 @@
                                     <outlet property="AmountLabel" destination="6jh-h7-ecE" id="6YX-LK-U9D"/>
                                     <outlet property="DueDateLabel" destination="o1c-DY-8bG" id="gZT-Xd-z9B"/>
                                     <outlet property="NameTitleLabel" destination="AEk-HY-CvB" id="cx4-Ue-IpN"/>
-                                    <segue destination="BDa-TJ-Vye" kind="show" identifier="DisplayDebt" id="dhq-ee-qMe"/>
+                                    <segue destination="BDa-TJ-Vye" kind="show" identifier="displayDebt" id="dhq-ee-qMe"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -154,7 +154,7 @@
                             <outlet property="delegate" destination="XfL-Ob-QYm" id="cfC-dh-8eB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Debts" id="NVu-lK-Nr1">
+                    <navigationItem key="navigationItem" title="Their Debts" id="NVu-lK-Nr1">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bOk-ba-iUB">
                             <connections>
                                 <segue destination="BDa-TJ-Vye" kind="show" identifier="addDebt" id="B2W-1D-9ID"/>
@@ -290,15 +290,10 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Debt Info" id="LPR-QN-ZTk">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gcI-6I-bNg">
-                            <connections>
-                                <segue destination="uFd-Cn-PaH" kind="unwind" identifier="cancel" unwindAction="unwindToListNotesViewController:" id="MNa-9f-RtA"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gcI-6I-bNg"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="CyI-V7-rku">
                             <connections>
                                 <action selector="savebuttontapped:" destination="BDa-TJ-Vye" id="LBe-ER-wjN"/>
-                                <segue destination="uFd-Cn-PaH" kind="unwind" identifier="save" unwindAction="unwindToListNotesViewController:" id="gZh-VX-zAz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -309,12 +304,13 @@
                         <outlet property="dateDueTextField" destination="zNG-Fx-XTM" id="Fcp-hb-IQv"/>
                         <outlet property="descriptionTextView" destination="BDV-rV-pH3" id="y1Q-Kn-w2i"/>
                         <outlet property="oweOption" destination="JtS-wE-GnO" id="Jnf-oX-4GF"/>
+                        <segue destination="uFd-Cn-PaH" kind="unwind" identifier="saveTheirDebt" unwindAction="unwindToHome:" id="4fi-7t-R0i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yNL-Hb-vyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="uFd-Cn-PaH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="-323.38830584707648"/>
+            <point key="canvasLocation" x="1356" y="47"/>
         </scene>
         <!--My Debts-->
         <scene sceneID="pmZ-iw-i08">
@@ -338,21 +334,101 @@
             </objects>
             <point key="canvasLocation" x="-604" y="-324.28785607196403"/>
         </scene>
-        <!--Table View Controller-->
+        <!--My Debts-->
         <scene sceneID="hQ3-sO-RA2">
             <objects>
                 <tableViewController id="cLe-8S-7A4" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="W97-dy-AYQ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="W97-dy-AYQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.99607843137254903" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lA8-VA-8Ed">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.90588235294117647" green="0.3529411764705882" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <color key="highlightedColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DebtListTableView" id="KAJ-nq-KV1">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DebtListTableView" rowHeight="80" id="KAJ-nq-KV1">
+                                <rect key="frame" x="0.0" y="72" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KAJ-nq-KV1" id="AbH-5S-TJS">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccE-NK-oAZ">
+                                            <rect key="frame" x="25" y="17" width="324" height="19"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHS-YU-FGA">
+                                            <rect key="frame" x="25" y="35" width="324" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yCL-U5-0xo">
+                                            <rect key="frame" x="315" y="29" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJ9-bG-I1B">
+                                                    <rect key="frame" x="0.0" y="0.0" width="11" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="XX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-k8-dmC">
+                                                    <rect key="frame" x="11" y="0.0" width="22.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biv-pG-Cr5">
+                                            <rect key="frame" x="0.0" y="7" width="7" height="72"/>
+                                            <color key="backgroundColor" red="1" green="0.99607843139999996" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="7" id="XjZ-h0-eiI"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="7" id="ddm-kN-egG"/>
+                                                <constraint firstAttribute="height" constant="72" id="o3d-JK-wvS"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waC-xW-fMq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="7"/>
+                                            <color key="backgroundColor" red="1" green="0.99607843139999996" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="7" id="kBv-eH-zZq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sav-Aw-pEJ">
+                                            <rect key="frame" x="368" y="3" width="7" height="72"/>
+                                            <color key="backgroundColor" red="1" green="0.99607843139999996" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="7" id="Wg9-C5-5vh"/>
+                                                <constraint firstAttribute="width" constant="7" id="ahP-Qd-iai"/>
+                                                <constraint firstAttribute="height" constant="72" id="vGc-uv-fm9"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="sav-Aw-pEJ" secondAttribute="trailing" id="T4o-dI-EDv"/>
+                                        <constraint firstItem="biv-pG-Cr5" firstAttribute="leading" secondItem="AbH-5S-TJS" secondAttribute="leading" id="zam-R0-bWc"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -361,7 +437,13 @@
                             <outlet property="delegate" destination="cLe-8S-7A4" id="J6q-lV-ScU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ykM-P9-9pc"/>
+                    <navigationItem key="navigationItem" title="My Debts" id="ykM-P9-9pc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dWI-ch-MO8">
+                            <connections>
+                                <segue destination="BDa-TJ-Vye" kind="show" identifier="addTheirDebts" id="R66-V7-8Tv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hca-l4-TIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -391,6 +473,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="B2W-1D-9ID"/>
+        <segue reference="dhq-ee-qMe"/>
     </inferredMetricsTieBreakers>
 </document>

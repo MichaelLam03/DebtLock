@@ -10,7 +10,7 @@ import Foundation
 import FirebaseDatabase.FIRDataSnapshot
 
 
-class Debt: NSObject {
+class Debt {
     
     // MARK: - Properties
     

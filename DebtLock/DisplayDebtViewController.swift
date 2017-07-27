@@ -22,74 +22,30 @@ class DisplayDebtViewController : UIViewController {
    
     @IBOutlet weak var dateDueTextField: UITextField!
     
-    @IBAction func savebuttontapped(_ sender: UIBarButtonItem) {
-        
-    //  DebtService.create(owedFrom: NameTextField.text!, amount: amountTextField.text!, debtDescription: descriptionTextView.text!, dueDate: dateDueTextField.text!, completion: <#(Debt?) -> Void#> )
-        
-    }
-}
- 
- /*
-
-class DisplayDebtViewController : UIViewController {
     var debt: Debt?
     
-    @IBOutlet weak var DebtContentTextView: UITextView!
-    @IBOutlet weak var debtTitleTextField: UITextField!
-    @IBOutlet weak var AmountTextField: UITextField!
-    @IBOutlet weak var DateDueTextField: UITextField!
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBAction func savebuttontapped(_ sender: UIBarButtonItem) {
+        
+        DebtService.create(owedFrom: NameTextField.text!, amount: amountTextField.text!, debtDescription: descriptionTextView.text!, dueDate: dateDueTextField.text!, completion: { debt in
+            if let debt = debt {
+                self.debt = debt
+                self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
+            }
+        })
+        
     }
-    
- 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
         
         
-        if segue.identifier == "save" {
-            
-            
-            
-            // if note exists, update title and content
-           // let note = self.note ?? CoreDataHelper.createNote()
-            
-            debt.title = debtTitleTextField.text ?? ""
-            debt.amount = AmountTextField.text ?? nil
-            debt.duedate = DateDueTextField.text ?? nil
-            debt.content = DebtContentTextView.text ?? ""
-            debt.modificationTime = Date() as NSDate
-//            CoreDataHelper.saveNote()
-        }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        // 1
-        
-        if let debt = debt {
-            
-            // 2
-            debtTitleTextField.text = debt.title
-            AmountTextField.text = debt.amount
-            DebtContentTextView.text = debt.content
-            DateDueTextField.text = debt.duedate
-           
-        } else{
-            // 3
-            debtTitleTextField.text = ""
-            AmountTextField.text = nil
-            DebtContentTextView.text = ""
-            DateDueTextField.text = nil
-           
+        if segue.identifier == "saveTheirDebt" {
+            if let debt = self.debt {
+                let homeVC = segue.destination as! DebtsTableViewController
+                homeVC.debts.append(debt)
+            }
         }
     }
 }
-*/
 

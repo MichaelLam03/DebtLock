@@ -5,15 +5,17 @@
 //  Created by Ji Yeon Kim on 25/7/2017.
 //  Copyright © 2017 Michael Lam. All rights reserved.
 //
-var count = 0
+
 import UIKit
 import FirebaseDatabase
 
 class DebtsTableViewController: UITableViewController {
     
-    var debts = [Debt]()
-    
-    var ref: DatabaseReference! = Database.database().reference()
+    var debts = [Debt]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,14 @@ class DebtsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        DebtService.existingDebts(for: User.current, completion: { debts in
+            self.debts = debts
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,8 +52,10 @@ class DebtsTableViewController: UITableViewController {
     
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)
-        cell.backgroundColor = .red
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell") as? ListTableViewCell else {
+            fatalError("No such cell!")
+        }
+        
         
         return cell
     }
@@ -51,14 +63,20 @@ class DebtsTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
-            if identifier == "displayDebt" {
-                print("Table view cell tapped")
+            if identifier == Constants.Segue.displayDebt {
+                let indexPath = tableView.indexPathForSelectedRow
+                let debt = debts[(indexPath?.row)!]
+                
             } else if identifier == "addDebt" {
-                count += 1
+               
                 print("+ button tapped")
                 
             }
         }
+    }
+    
+    @IBAction func unwindToHome(_ segue: UIStoryboardSegue) {
+        
     }
 
 
