@@ -25,7 +25,7 @@
 		7E783E6D1F25E32100F58D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E6B1F25E32100F58D25 /* LaunchScreen.storyboard */; };
 		7E783E761F26D48000F58D25 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E741F26D48000F58D25 /* Login.storyboard */; };
 		7E783E781F26D5A700F58D25 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E771F26D5A700F58D25 /* LoginViewController.swift */; };
-		7E783E7C1F297E0F00F58D25 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E7B1F297E0F00F58D25 /* GoogleService-Info (1).plist */; };
+		7E783E7C1F297E0F00F58D25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E7B1F297E0F00F58D25 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +48,7 @@
 		7E783E6E1F25E32100F58D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E783E751F26D48000F58D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		7E783E771F26D5A700F58D25 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = DebtLock/LoginViewController.swift; sourceTree = "<group>"; };
-		7E783E7B1F297E0F00F58D25 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		7E783E7B1F297E0F00F58D25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9E5D68EE00470BC886BD9167 /* Pods-DebtLock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebtLock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DebtLock/Pods-DebtLock.debug.xcconfig"; sourceTree = "<group>"; };
 		B0585185CF68C767136D8247 /* Pods-DebtLock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebtLock.release.xcconfig"; path = "Pods/Target Support Files/Pods-DebtLock/Pods-DebtLock.release.xcconfig"; sourceTree = "<group>"; };
 		F84A7CC4C903FCCCAA573B41 /* Pods_DebtLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DebtLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				7E783E6E1F25E32100F58D25 /* Info.plist */,
-				7E783E7B1F297E0F00F58D25 /* GoogleService-Info (1).plist */,
+				7E783E7B1F297E0F00F58D25 /* GoogleService-Info.plist */,
 				7E783E691F25E32100F58D25 /* Assets.xcassets */,
 				5EE613D11F28226A00C228D6 /* Constants.swift */,
 				7E783E621F25E32100F58D25 /* AppDelegate.swift */,
@@ -256,7 +256,7 @@
 			files = (
 				7E783E761F26D48000F58D25 /* Login.storyboard in Resources */,
 				7E783E6D1F25E32100F58D25 /* LaunchScreen.storyboard in Resources */,
-				7E783E7C1F297E0F00F58D25 /* GoogleService-Info (1).plist in Resources */,
+				7E783E7C1F297E0F00F58D25 /* GoogleService-Info.plist in Resources */,
 				7E783E6A1F25E32100F58D25 /* Assets.xcassets in Resources */,
 				7E783E681F25E32100F58D25 /* Main.storyboard in Resources */,
 			);
