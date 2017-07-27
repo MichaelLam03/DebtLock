@@ -17,7 +17,8 @@ class DisplayDebtViewController : UIViewController {
     @IBOutlet weak var oweOption: UISegmentedControl!
     @IBOutlet weak var NameTextField: UITextField!
     @IBOutlet weak var amountTextField: UITextField!
-    @IBOutlet weak var descriptionTextField: UITextView!
+    
+    @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var dateDueTextField: UITextField!
     
     @IBAction func savebuttontapped(_ sender: UIBarButtonItem) {
