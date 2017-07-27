@@ -39,7 +39,8 @@ class LoginViewController : UIViewController {
 
 extension LoginViewController: FUIAuthDelegate {
     func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
-        if error != nil {
+        if let error = error {
+            print(error.localizedDescription)
             return
         }
         
