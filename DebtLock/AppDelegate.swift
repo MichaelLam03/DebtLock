@@ -27,10 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use Firebase library to configure APIs
         FirebaseApp.configure()
         
-        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-        GIDSignIn.sharedInstance().delegate = self as!         
-        
-        configureInitialRootViewController;(for: window)
+        configureInitialRootViewController(for: window)
         
         return true
     }

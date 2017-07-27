@@ -29,7 +29,7 @@ class LoginViewController : UIViewController {
         guard let authUI = FUIAuth.defaultAuthUI()
             else { return }
     
-        authUI.delegate = self as! FUIAuthDelegate
+        authUI.delegate = self as FUIAuthDelegate
         
         let authViewController = authUI.authViewController()
         present(authViewController, animated: true)
