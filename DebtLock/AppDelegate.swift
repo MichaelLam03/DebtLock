@@ -14,16 +14,23 @@ import GoogleSignIn
 import FirebaseAuth
 import FirebaseAuthUI
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+
+
     
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     var window: UIWindow?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
+        [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Use Firebase library to configure APIs
         FirebaseApp.configure()
         
-        configureInitialRootViewController(for: window)
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self as!         
+        
+        configureInitialRootViewController;(for: window)
         
         return true
     }

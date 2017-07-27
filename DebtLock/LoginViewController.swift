@@ -29,12 +29,26 @@ class LoginViewController : UIViewController {
         guard let authUI = FUIAuth.defaultAuthUI()
             else { return }
     
-        authUI.delegate = self
+        authUI.delegate = self as! FUIAuthDelegate
         
         let authViewController = authUI.authViewController()
         present(authViewController, animated: true)
     }
     
+}
+
+
+
+class MainViewController: UITableViewController, GIDSignInUIDelegate {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().signIn()
+        
+        // TODO(developer) Configure the sign-in button look/feel
+        // ...
+    }
 }
 
 extension LoginViewController: FUIAuthDelegate {
