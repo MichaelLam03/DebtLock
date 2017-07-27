@@ -12,6 +12,8 @@ import FirebaseAuth
 import FirebaseAuthUI
 import FirebaseDatabase.FIRDataSnapshot
 import FirebaseDatabase
+import Firebase
+import GoogleSignIn
 
 typealias FIRUser = FirebaseAuth.User
 class LoginViewController : UIViewController {

@@ -11,5 +11,8 @@ target 'DebtLock' do
   pod 'Firebase/Auth'
   pod 'FirebaseUI/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+
   
 end

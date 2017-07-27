@@ -9,7 +9,8 @@
 import UIKit
 import FirebaseCore
 import FirebaseDatabase
-
+import Firebase
+import GoogleSignIn
 import FirebaseAuth
 import FirebaseAuthUI
 @UIApplicationMain
