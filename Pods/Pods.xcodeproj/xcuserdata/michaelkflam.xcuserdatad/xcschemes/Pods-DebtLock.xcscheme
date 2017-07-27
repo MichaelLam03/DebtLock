@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A1CF087667DB9FB7CDC12FC22807532A"
+               BlueprintIdentifier = "57E3598953CEF56E9523A581A444ABA5"
                BuildableName = "Pods_DebtLock.framework"
                BlueprintName = "Pods-DebtLock"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A1CF087667DB9FB7CDC12FC22807532A"
+            BlueprintIdentifier = "57E3598953CEF56E9523A581A444ABA5"
             BuildableName = "Pods_DebtLock.framework"
             BlueprintName = "Pods-DebtLock"
             ReferencedContainer = "container:Pods.xcodeproj">
