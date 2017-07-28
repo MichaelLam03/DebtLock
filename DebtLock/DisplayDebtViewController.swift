@@ -34,20 +34,49 @@ class DisplayDebtViewController : UIViewController {
     
     var debt : Debt?
     
+    func alert() {
+        
+        let alert = UIAlertController(title: "Error", message: "All fields must be filled", preferredStyle: UIAlertControllerStyle.alert)
+        
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     @IBAction func savebuttontapped(_ sender: UIBarButtonItem) {
         
         
-        if let _ = self.debt {
-            debt!.owedFrom = NameTextField.text ?? ""
-            debt!.amount = amountTextField.text ?? ""
-            debt!.debtDescription = descriptionTextView.text ?? ""
-            DebtService.save(debt!)
-            self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
-        } else {
-            DebtService.create(owedFrom: NameTextField.text!, amount: amountTextField.text!, debtDescription: descriptionTextView.text!, dueDate: dateDueTextField.text!)
-            self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
+        if NameTextField.text?.isEmpty == false {
+            print("ok")
+            if descriptionTextView.text != "" {
+                if dateDueTextField.text != "" {
+                    if amountTextField.text != "" {
+                        
+                        if let _ = self.debt {
+                            debt!.owedFrom = NameTextField.text ?? ""
+                            debt!.amount = amountTextField.text ?? ""
+                            debt!.debtDescription = descriptionTextView.text ?? ""
+                            DebtService.save(debt!)
+                            self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
+                        } else {
+                            DebtService.create(owedFrom: NameTextField.text!, amount: amountTextField.text!, debtDescription: descriptionTextView.text!, dueDate: dateDueTextField.text!)
+                            self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
+                        }
+                        
+                    } else{
+                        alert()
+                    }
+                }else {
+                    alert()
+                }
+            }else {
+                alert()
+            }
+        }else{
+            alert()
         }
-        
     }
     
     

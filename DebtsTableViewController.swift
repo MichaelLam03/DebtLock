@@ -22,6 +22,8 @@ class DebtsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -115,6 +117,9 @@ class DebtsTableViewController: UITableViewController {
             //1
             let debt = debts[indexPath.row]
             Database.database().reference().child("debts").child(User.current.uid).child(debt.id).setValue(nil)
+            self.viewDidLoad()
+            viewDidAppear(true)
+
         }
     }
     
