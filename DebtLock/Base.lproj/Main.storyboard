@@ -327,7 +327,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wpz-aY-h2S">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Wpz-aY-h2S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -476,7 +476,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B3x-3b-6pg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="B3x-3b-6pg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -491,6 +491,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="R66-V7-8Tv"/>
+        <segue reference="dhq-ee-qMe"/>
     </inferredMetricsTieBreakers>
 </document>
