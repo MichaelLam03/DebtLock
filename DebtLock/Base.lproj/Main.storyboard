@@ -318,11 +318,11 @@
             </objects>
             <point key="canvasLocation" x="1356" y="47"/>
         </scene>
-        <!--My Debts-->
+        <!--I am owed-->
         <scene sceneID="pmZ-iw-i08">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ap2-ye-ac7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Debts" id="rOX-HM-XhY">
+                    <tabBarItem key="tabBarItem" title="I am owed" id="rOX-HM-XhY">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
                     </tabBarItem>
@@ -361,7 +361,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KAJ-nq-KV1" id="AbH-5S-TJS">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccE-NK-oAZ">
@@ -468,11 +468,11 @@
             </objects>
             <point key="canvasLocation" x="335.19999999999999" y="375.56221889055473"/>
         </scene>
-        <!--Their debts-->
+        <!--I owe-->
         <scene sceneID="p1o-Ef-3BD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oAt-9k-MB2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Their debts" id="vxX-8l-dHW">
+                    <tabBarItem key="tabBarItem" title="I owe" id="vxX-8l-dHW">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
                     </tabBarItem>
                     <toolbarItems/>
