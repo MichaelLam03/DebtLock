@@ -9,9 +9,13 @@
 import UIKit
 import FirebaseDatabase
 
+
 import FirebaseAuth.FIRUser
 
 class DebtsTableViewController: UITableViewController {
+    
+    @IBOutlet var table: UITableView!
+    @IBOutlet weak var totalAmountLabel: UILabel!
     
     var debts = [Debt]() {
         didSet {
@@ -19,11 +23,22 @@ class DebtsTableViewController: UITableViewController {
         }
     }
     
+    func total() -> Int{
+        var countAmount = 0
+        for x in debts{
+            countAmount += Int(x.amount)!
+        }
+        
+        return countAmount
+    }
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        
+        totalAmountLabel.text = "Total: $\(String(total()))"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -55,6 +70,7 @@ class DebtsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         print(debts.count)
+        self.viewDidLoad()
         return debts.count
         
         

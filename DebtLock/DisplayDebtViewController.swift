@@ -9,6 +9,12 @@
 import Foundation
 import UIKit
 
+extension String {
+    var isInt: Bool {
+        return Int(self) != nil
+    }
+}
+
 class DisplayDebtViewController : UIViewController {
     
     
@@ -45,6 +51,7 @@ class DisplayDebtViewController : UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    
     @IBAction func savebuttontapped(_ sender: UIBarButtonItem) {
         
         
@@ -54,15 +61,29 @@ class DisplayDebtViewController : UIViewController {
                 if dateDueTextField.text != "" {
                     if amountTextField.text != "" {
                         
-                        if let _ = self.debt {
-                            debt!.owedFrom = NameTextField.text ?? ""
-                            debt!.amount = amountTextField.text ?? ""
-                            debt!.debtDescription = descriptionTextView.text ?? ""
-                            DebtService.save(debt!)
-                            self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
+                        if ((amountTextField.text)?.isInt)! {
+                            
+                            if let _ = self.debt {
+                                debt!.owedFrom = NameTextField.text ?? ""
+                                debt!.amount = amountTextField.text ?? ""
+                                debt!.debtDescription = descriptionTextView.text ?? ""
+                                DebtService.save(debt!)
+                                self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
+                            } else {
+                                DebtService.create(owedFrom: NameTextField.text!, amount: amountTextField.text!, debtDescription: descriptionTextView.text!, dueDate: dateDueTextField.text!)
+                                self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
+                            }
+                            
+
+                            
                         } else {
-                            DebtService.create(owedFrom: NameTextField.text!, amount: amountTextField.text!, debtDescription: descriptionTextView.text!, dueDate: dateDueTextField.text!)
-                            self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
+                            let alert = UIAlertController(title: "Error", message: "Amount field must by integer only", preferredStyle: UIAlertControllerStyle.alert)
+                            
+                            // add an action (button)
+                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                            
+                            // show the alert
+                            self.present(alert, animated: true, completion: nil)
                         }
                         
                     } else{
@@ -77,8 +98,8 @@ class DisplayDebtViewController : UIViewController {
         }else{
             alert()
         }
-    }
-    
+}
+
     
     @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
         
@@ -89,7 +110,7 @@ class DisplayDebtViewController : UIViewController {
         
         if segue.identifier == Constants.Segue.saveTheirDebt {
             if let debt = self.debt {
-                let homeVC = segue.destination as! DebtsTableViewController
+                let _ = segue.destination as! DebtsTableViewController
                 //homeVC.debts.append(debt)
                 
                 print(debt)
