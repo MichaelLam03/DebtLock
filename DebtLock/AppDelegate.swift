@@ -13,11 +13,23 @@ import Firebase
 import GoogleSignIn
 import FirebaseAuth
 import FirebaseAuthUI
+
 @UIApplicationMain
 
 
     
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String?
+        if FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication) ?? false {
+            return true
+        }
+        
+        // other URL handling goes here
+        
+        return false
+    }
 
 
     var window: UIWindow?

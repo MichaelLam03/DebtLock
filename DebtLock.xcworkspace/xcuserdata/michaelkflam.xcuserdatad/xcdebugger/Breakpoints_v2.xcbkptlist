@@ -2,4 +2,97 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DebtLock/LoginViewController.swift"
+            timestampString = "522868657.321947"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DebtLock.LoginViewController.__deallocating_deinit"
+                  moduleName = "DebtLock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelkflam/Desktop/Make%20School%20Projects/DebtLock/DebtLock/LoginViewController.swift"
+                  timestampString = "522897462.950572"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DebtLock.LoginViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; DebtLock.LoginViewController"
+                  moduleName = "DebtLock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelkflam/Desktop/Make%20School%20Projects/DebtLock/DebtLock/LoginViewController.swift"
+                  timestampString = "522897462.954295"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DebtLock.LoginViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; DebtLock.LoginViewController"
+                  moduleName = "DebtLock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelkflam/Desktop/Make%20School%20Projects/DebtLock/DebtLock/LoginViewController.swift"
+                  timestampString = "522897462.958835"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DebtLock.LoginViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;DebtLock.LoginViewController&gt;"
+                  moduleName = "DebtLock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelkflam/Desktop/Make%20School%20Projects/DebtLock/DebtLock/LoginViewController.swift"
+                  timestampString = "522897462.962648"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DebtLock.LoginViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;DebtLock.LoginViewController&gt;"
+                  moduleName = "DebtLock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelkflam/Desktop/Make%20School%20Projects/DebtLock/DebtLock/LoginViewController.swift"
+                  timestampString = "522897462.966532"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

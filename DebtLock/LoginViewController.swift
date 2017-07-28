@@ -14,6 +14,7 @@ import FirebaseDatabase.FIRDataSnapshot
 import FirebaseDatabase
 import Firebase
 import GoogleSignIn
+import FirebaseFacebookAuthUI
 
 typealias FIRUser = FirebaseAuth.User
 class LoginViewController : UIViewController {
@@ -33,7 +34,12 @@ class LoginViewController : UIViewController {
         
         let authViewController = authUI.authViewController()
         present(authViewController, animated: true)
-    }
+        
+        
+        let providers: [FUIAuthProvider] = [FUIFacebookAuth()]
+        authUI.providers = providers
+        
+          }
     
 }
 
