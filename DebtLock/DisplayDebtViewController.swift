@@ -19,7 +19,7 @@ class DisplayDebtViewController : UIViewController {
     @IBOutlet weak var descriptionTextView: UITextField!
     
     @IBOutlet weak var dateDueTextField: UITextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,22 +38,14 @@ class DisplayDebtViewController : UIViewController {
         
         
         if let _ = self.debt {
-            debt?.owedFrom = NameTextField.text ?? ""
-            debt?.amount = amountTextField.text ?? ""
-            debt?.debtDescription = descriptionTextView.text ?? ""
+            debt!.owedFrom = NameTextField.text ?? ""
+            debt!.amount = amountTextField.text ?? ""
+            debt!.debtDescription = descriptionTextView.text ?? ""
+            DebtService.save(debt!)
             self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
-            
-            
         } else {
-            
-            DebtService.create(owedFrom: NameTextField.text!, amount: amountTextField.text!, debtDescription: descriptionTextView.text!, dueDate: dateDueTextField.text!, completion: { debt in
-                if let debtt = debt {
-                    self.debt = debtt
-                    
-                    self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
-                }
-            })
-            
+            DebtService.create(owedFrom: NameTextField.text!, amount: amountTextField.text!, debtDescription: descriptionTextView.text!, dueDate: dateDueTextField.text!)
+            self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
         }
         
     }
@@ -63,18 +55,18 @@ class DisplayDebtViewController : UIViewController {
         
         self.performSegue(withIdentifier: "Cancel", sender: nil)
     }
- 
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "saveTheirDebt" {
+        if segue.identifier == Constants.Segue.saveTheirDebt {
             if let debt = self.debt {
                 let homeVC = segue.destination as! DebtsTableViewController
-                homeVC.debts.append(debt)
-    
+                //homeVC.debts.append(debt)
+                
                 print(debt)
-                }
+            }
         }
-        }
+    }
     
     
     

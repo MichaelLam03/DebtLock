@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Use Firebase library to configure APIs
         FirebaseApp.configure()
-        
+        Database.database().isPersistenceEnabled = true
         configureInitialRootViewController(for: window)
         
         return true

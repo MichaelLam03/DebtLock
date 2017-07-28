@@ -12,7 +12,7 @@ import FirebaseDatabase
 
 struct DebtService {
         
-    static func create(owedFrom: String, amount: String, debtDescription: String, dueDate: String, completion: @escaping (Debt?) -> Void) {
+    static func create(owedFrom: String, amount: String, debtDescription: String, dueDate: String) {
         
         let ref = Database.database().reference().child("debts").child(User.current.uid).childByAutoId()
         let debtID = ref.key
@@ -20,10 +20,14 @@ struct DebtService {
         ref.updateChildValues(debt.dictValue) { (error, ref) in
             if let error = error {
                 assertionFailure(error.localizedDescription)
-                return completion(nil)
+                return
             }
-            completion(debt)
         }
+    }
+    
+    static func save(_ debt: Debt) {
+        let ref = Database.database().reference().child("debts").child(User.current.uid).child(debt.id)
+        ref.updateChildValues(debt.dictValue)
     }
     
     static func existingDebts(for user: User, completion: @escaping ([Debt]) -> Void) {
