@@ -36,9 +36,7 @@ class LoginViewController : UIViewController {
         present(authViewController, animated: true)
         
         
-        let providers: [FUIAuthProvider] = [FUIFacebookAuth()]
-        authUI.providers = providers
-        
+               
           }
     
 }
