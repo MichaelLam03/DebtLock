@@ -19,6 +19,9 @@
 		5EE613D21F28226A00C228D6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE613D11F28226A00C228D6 /* Constants.swift */; };
 		5EE613D41F282BD300C228D6 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE613D31F282BD300C228D6 /* Storyboard+Utility.swift */; };
 		5EE613D61F28348700C228D6 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE613D51F28348700C228D6 /* Debt.swift */; };
+		5EEB6FD81F2AF404007C70A9 /* MyDebtsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEB6FD71F2AF404007C70A9 /* MyDebtsTableViewController.swift */; };
+		5EEB6FDA1F2AFD0D007C70A9 /* MyDebtsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEB6FD91F2AFD0D007C70A9 /* MyDebtsService.swift */; };
+		5EEB6FDC1F2AFF19007C70A9 /* MyDebtsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEB6FDB1F2AFF19007C70A9 /* MyDebtsTableViewCell.swift */; };
 		7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E783E621F25E32100F58D25 /* AppDelegate.swift */; };
 		7E783E681F25E32100F58D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E661F25E32100F58D25 /* Main.storyboard */; };
 		7E783E6A1F25E32100F58D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E783E691F25E32100F58D25 /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 		5EE613D11F28226A00C228D6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5EE613D31F282BD300C228D6 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Storyboard+Utility.swift"; path = "../Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		5EE613D51F28348700C228D6 /* Debt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
+		5EEB6FD71F2AF404007C70A9 /* MyDebtsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyDebtsTableViewController.swift; path = DebtLock/MyDebtsTableViewController.swift; sourceTree = "<group>"; };
+		5EEB6FD91F2AFD0D007C70A9 /* MyDebtsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDebtsService.swift; sourceTree = "<group>"; };
+		5EEB6FDB1F2AFF19007C70A9 /* MyDebtsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDebtsTableViewCell.swift; sourceTree = "<group>"; };
 		7E783E5F1F25E32100F58D25 /* DebtLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebtLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E783E621F25E32100F58D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E783E671F25E32100F58D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +88,7 @@
 				7E783E771F26D5A700F58D25 /* LoginViewController.swift */,
 				5EE517C11F273954000D2072 /* DebtsTableViewController.swift */,
 				5E5A24541F25E85000F19581 /* DisplayDebtViewController.swift */,
+				5EEB6FD71F2AF404007C70A9 /* MyDebtsTableViewController.swift */,
 			);
 			name = Controllers;
 			path = ..;
@@ -107,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				5E5A24591F25E9F300F19581 /* ListTableViewCell.swift */,
+				5EEB6FDB1F2AFF19007C70A9 /* MyDebtsTableViewCell.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 			children = (
 				5EE613CF1F2821F300C228D6 /* UserService.swift */,
 				5EE517C31F273A6D000D2072 /* DebtService.swift */,
+				5EEB6FD91F2AFD0D007C70A9 /* MyDebtsService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -317,6 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EEB6FDC1F2AFF19007C70A9 /* MyDebtsTableViewCell.swift in Sources */,
+				5EEB6FDA1F2AFD0D007C70A9 /* MyDebtsService.swift in Sources */,
 				5EE613D61F28348700C228D6 /* Debt.swift in Sources */,
 				5E5A245A1F25E9F300F19581 /* ListTableViewCell.swift in Sources */,
 				7E783E781F26D5A700F58D25 /* LoginViewController.swift in Sources */,
@@ -329,6 +340,7 @@
 				5EE613D01F2821F300C228D6 /* UserService.swift in Sources */,
 				5EE613D41F282BD300C228D6 /* Storyboard+Utility.swift in Sources */,
 				7E783E631F25E32100F58D25 /* AppDelegate.swift in Sources */,
+				5EEB6FD81F2AF404007C70A9 /* MyDebtsTableViewController.swift in Sources */,
 				5EE613D21F28226A00C228D6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,7 @@ struct Constants {
         static let toCreateUsername = "toCreateUsername"
         static let displayDebt = "displayDebt"
         static let saveTheirDebt = "saveTheirDebt"
+        static let saveMyDebt = "saveMyDebt"
         static let addDebt = "addDebt"
     }
     

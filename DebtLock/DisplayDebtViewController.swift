@@ -67,14 +67,36 @@ class DisplayDebtViewController : UIViewController {
                                 debt!.owedFrom = NameTextField.text ?? ""
                                 debt!.amount = amountTextField.text ?? ""
                                 debt!.debtDescription = descriptionTextView.text ?? ""
-                                DebtService.save(debt!)
-                                self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
-                            } else {
-                                DebtService.create(owedFrom: NameTextField.text!, amount: amountTextField.text!, debtDescription: descriptionTextView.text!, dueDate: dateDueTextField.text!)
-                                self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
-                            }
-                            
+                                
+                                //if its their debt or not
+                                
+                                switch oweOption.selectedSegmentIndex{
+                                case 0:
+                                    MyDebtService.save(debt!)
+                                    print("save")
 
+                                    self.performSegue(withIdentifier: "saveMyDebt", sender: nil)
+                                    
+                                case 1:
+                                    DebtService.save(debt!)
+                                    self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
+                                default:
+                                    break
+                                }
+                                
+                            } else {
+                                
+                                switch oweOption.selectedSegmentIndex{
+                                case 0:
+                                    MyDebtService.create(owedFrom: NameTextField.text!, amount: amountTextField.text!, debtDescription: descriptionTextView.text!, dueDate: dateDueTextField.text!)
+                                    self.performSegue(withIdentifier: "saveMyDebt", sender: nil)
+                                case 1:
+                                    DebtService.create(owedFrom: NameTextField.text!, amount: amountTextField.text!, debtDescription: descriptionTextView.text!, dueDate: dateDueTextField.text!)
+                                    self.performSegue(withIdentifier: "saveTheirDebt", sender: nil)
+                                default:
+                                    break
+                                }
+                            }
                             
                         } else {
                             let alert = UIAlertController(title: "Error", message: "Amount field must by integer only", preferredStyle: UIAlertControllerStyle.alert)
@@ -83,12 +105,7 @@ class DisplayDebtViewController : UIViewController {
                             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
                             
                             // show the alert
-                            self.present(alert, animated: true, completion: nil)
-                        }
-                        
-                    } else{
-                        alert()
-                    }
+                            self.present(alert, animated: true, completion: nil)}
                 }else {
                     alert()
                 }
@@ -97,10 +114,11 @@ class DisplayDebtViewController : UIViewController {
             }
         }else{
             alert()
-        }
-}
+            }
+        }}
 
-    
+
+
     @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
         
         self.performSegue(withIdentifier: "Cancel", sender: nil)
@@ -108,18 +126,35 @@ class DisplayDebtViewController : UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == Constants.Segue.saveTheirDebt {
-            if let debt = self.debt {
-                let _ = segue.destination as! DebtsTableViewController
-                //homeVC.debts.append(debt)
-                
-                print(debt)
+        
+        switch oweOption.selectedSegmentIndex{
+        case 0:
+            if segue.identifier == Constants.Segue.saveMyDebt {
+                if let debt = self.debt {
+                    let _ = segue.destination as! MyDebtsTableViewController
+                    //homeVC.debts.append(debt)
+                    
+                    print(debt)
+                }
             }
+        case 1:
+            if segue.identifier == Constants.Segue.saveTheirDebt {
+                if let debt = self.debt {
+                    let _ = segue.destination as! DebtsTableViewController
+                    //homeVC.debts.append(debt)
+                    
+                    print(debt)
+                }
+            }
+        default:
+            break
         }
-    }
-    
-    
-    
+        
 }
+}
+
+    
+    
+
 
 

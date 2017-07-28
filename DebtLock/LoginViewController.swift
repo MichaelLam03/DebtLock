@@ -13,8 +13,8 @@ import FirebaseAuthUI
 import FirebaseDatabase.FIRDataSnapshot
 import FirebaseDatabase
 import Firebase
-import GoogleSignIn
-import FirebaseFacebookAuthUI
+//import GoogleSignIn
+//import FirebaseFacebookAuthUI
 
 typealias FIRUser = FirebaseAuth.User
 class LoginViewController : UIViewController {
@@ -29,32 +29,32 @@ class LoginViewController : UIViewController {
     @IBAction func loginButtonTapped(_ sender: UIButton) {
         guard let authUI = FUIAuth.defaultAuthUI()
             else { return }
-    
-        authUI.delegate = self as FUIAuthDelegate
+        
+        authUI.delegate = self
+        
+        // configure Auth UI for Facebook login
+      //  let providers: [FUIAuthProvider] = [FUIFacebookAuth()]
+       // authUI.providers = providers
         
         let authViewController = authUI.authViewController()
         present(authViewController, animated: true)
-        
-        
-               
-          }
-    
+    }
 }
 
+/*
 
-
-class MainViewController: UITableViewController, GIDSignInUIDelegate {
+class MainViewController: UITableViewController //GIDSignInUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().signIn()
+       // GIDSignIn.sharedInstance().uiDelegate = self
+      //  GIDSignIn.sharedInstance().signIn()
         
         // TODO(developer) Configure the sign-in button look/feel
         // ...
     }
-}
 
+*/
 extension LoginViewController: FUIAuthDelegate {
     func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
         if let error = error {
