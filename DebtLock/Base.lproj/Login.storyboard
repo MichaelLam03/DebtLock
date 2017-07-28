@@ -55,28 +55,23 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQl-J5-rmg">
-                                <rect key="frame" x="51" y="285" width="273" height="44"/>
+                                <rect key="frame" x="51" y="310" width="273" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.6951619832" blue="0.58627358370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="co0-vI-hrq"/>
+                                    <constraint firstAttribute="height" constant="60" id="co0-vI-hrq"/>
                                 </constraints>
                                 <state key="normal" title="Login or Register"/>
                                 <connections>
                                     <action selector="loginButtonTapped:" destination="50a-Xg-7OU" eventType="touchUpInside" id="jQU-mf-g33"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKD-Zg-tpP" customClass="GIDSignInButton">
-                                <rect key="frame" x="67" y="394" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="5bM-e6-zyA" firstAttribute="top" secondItem="x7R-QL-gBb" secondAttribute="top" id="EUC-OB-Wga"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GQl-J5-rmg" secondAttribute="trailing" constant="35" id="Ytf-uE-yDm"/>
-                            <constraint firstItem="GQl-J5-rmg" firstAttribute="top" secondItem="5bM-e6-zyA" secondAttribute="bottom" constant="25" id="bjo-VK-8CB"/>
+                            <constraint firstItem="GQl-J5-rmg" firstAttribute="top" secondItem="5bM-e6-zyA" secondAttribute="bottom" constant="50" id="bjo-VK-8CB"/>
                             <constraint firstItem="GQl-J5-rmg" firstAttribute="leading" secondItem="x7R-QL-gBb" secondAttribute="leadingMargin" constant="35" id="cja-GR-cVS"/>
                             <constraint firstItem="5bM-e6-zyA" firstAttribute="leading" secondItem="x7R-QL-gBb" secondAttribute="leading" id="rQP-j2-KSj"/>
                             <constraint firstAttribute="trailing" secondItem="5bM-e6-zyA" secondAttribute="trailing" id="vem-3S-ddh"/>
@@ -175,7 +170,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="bBp-i0-cLP" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="csi-1w-2Xh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="csi-1w-2Xh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

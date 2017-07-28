@@ -120,9 +120,15 @@ class DisplayDebtViewController : UIViewController {
 
 
     @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
-        
-        self.performSegue(withIdentifier: "Cancel", sender: nil)
-    }
+        switch oweOption.selectedSegmentIndex{
+        case 0:
+            self.performSegue(withIdentifier: "MyDebtCancel", sender: nil)
+        case 1:
+            self.performSegue(withIdentifier: "Cancel", sender: nil)
+        default:
+            break
+        }
+}
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
