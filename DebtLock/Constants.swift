@@ -15,6 +15,7 @@ struct Constants {
         static let saveTheirDebt = "saveTheirDebt"
         static let saveMyDebt = "saveMyDebt"
         static let addDebt = "addDebt"
+        static let displayMyDebt = "displayMyDebt"
     }
     
     struct UserDefaults {

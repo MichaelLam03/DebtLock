@@ -12,7 +12,10 @@ import FirebaseDatabase
 
 import FirebaseAuth.FIRUser
 
+
+
 class DebtsTableViewController: UITableViewController {
+    
     
     @IBOutlet var table: UITableView!
     @IBOutlet weak var totalAmountLabel: UILabel!

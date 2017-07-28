@@ -458,7 +458,7 @@
                                     <outlet property="MyDebtAmountLabel" destination="bWQ-k8-dmC" id="c5I-If-GUe"/>
                                     <outlet property="MyDebtDueDateLabel" destination="BHS-YU-FGA" id="KnQ-Up-Ho6"/>
                                     <outlet property="MyDebtNameTitleLabel" destination="ccE-NK-oAZ" id="piR-fD-AQn"/>
-                                    <segue destination="BDa-TJ-Vye" kind="show" id="e5Q-Fi-w07"/>
+                                    <segue destination="BDa-TJ-Vye" kind="show" identifier="displayMyDebt" id="e5Q-Fi-w07"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -106,7 +106,7 @@ class MyDebtsTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
-            if identifier == Constants.Segue.displayDebt {
+            if identifier == Constants.Segue.displayMyDebt {
                 if let indexPath = tableView.indexPathForSelectedRow {
                     let debt = debts[indexPath.row]
                     let homeVC = segue.destination as! DisplayDebtViewController
